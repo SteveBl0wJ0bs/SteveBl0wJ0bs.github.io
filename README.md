@@ -1,1 +1,1 @@
-# SteveBl0wJ0bs.github.io
+Welcome to the repository of group 2 of the data visualization course of Unige, ay 2022/2023.
