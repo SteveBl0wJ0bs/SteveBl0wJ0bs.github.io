@@ -1,34 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:&display=swap');
 
+header {
+	background-color: #333;
+}
+
 body {
-	background-image: url("Images/background.png")
+	background-image: url("Images/background.png");
+}
+
+footer {
+	text-align: center;
+}
+
+footer img{
+	border-radius: 10px;
+}
+
+section {
+	padding-bottom: 15px;
 }
 
 .title{
 	font-family: 'Roboto Slab', serif;
+	width:100%;
+	text-align: center;
 	font-size: 32px;
 	color: #FEB459;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+					1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.title h1{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #333;
 }
 
 .group{
 	font-family: 'Roboto Slab', serif;
-	font-size: 22px;
+	font-size: 15px;
+	text-align: center;
 	color: #FEB459;
+	text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+					1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
 .topnav {
 	overflow: hidden;
 	background-color: #333;
-	width: 1262px;
+	width: auto;
+	text-align: center;
 	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 .topnav a {
-	float: left;
 	color: #F2F2F2;
-	text-align: center;
-	padding: 14px 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
 	text-decoration: none;
 	font-size: 32px;
 	font-family: 'Fira Sans', serif;
@@ -44,32 +76,6 @@ body {
 	color: white;
 }
 
-.paragraph-with-image {
-	font-family: 'Fira Sans', serif;
-	font-size: 22px;
-	color: black;
-	background-color: #FEB459;
-	border: 1px solid black;
-	width: 1200px;
-	padding-left: 60px;
-	padding-bottom: 60px;
-}
-
-.support-paragraph {
-	font-family: 'Fira Sans', serif;
-	font-size: 22px;
-	color: black;
-	background-color: #FEB459;
-	border: 1px solid black;
-	width: 1260px;
-}
-
-.top-right {
-	position: absolute;
-	top: 20px;
-	right: 40px;
-}
-
 a:link {
 	color: #4DAB14;
 	background-color: transparent;
@@ -83,7 +89,6 @@ a:visited {
 a:hover {
 	color: red;
 	background-color: transparent;
-	text-decoration: underline;
 }
 a:active {
 	color: yellow;
@@ -95,13 +100,24 @@ a:active {
 	fill: #FEB459;
 }
 
-.paragraph-with-bar-chart {
+.paragraph{
 	font-family: 'Fira Sans', serif;
-	font-size: 22px;
+	font-size: 25px;
 	color: black;
 	background-color: #FEB459;
 	border: 1px solid black;
-	width: 1200px;
-	padding-left: 60px;
+	width: 100%;
 	padding-bottom: 60px;
+	border-radius: 10px;
+}
+
+.paragraph p{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.paragraph img{
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
 }
