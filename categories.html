@@ -2,7 +2,6 @@
 <html lan="en">
 	<head>
 		<link href='style.css' rel='stylesheet'>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
 		<title>Trento Tree Map</title>
 	</head>
 	<body>
@@ -23,11 +22,17 @@
 			<a href="support.html">Contacts & Support</a>
 		</div>
 		
-		<section>
-			<div class="paragraph">
-				<p>The following page will contain several charts representing the most relevant informations about the tree dataset</p>
-			</div>
-		</section>
+		<div class="paragraph">
+			<p>Here you can consult the bar charts to get summary information for each category of tree. <br><br><br>The first graph shows the thirty most present categories.</p>
+			<div id="bar_chart"></div>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="javascript/bar_chart.js"></script>
+			<p> This second graph shows the top ten categories according to the replacement value(green) and the pollution removal quantity(pink).</p>
+			<div id="stacked_bar_chart"></div>
+			<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+			<script src="javascript/stacked_bar_chart.js"></script>
+		</div>
+		
 	</body>
 	<footer>
 		<img src="Images/TrentoLogo.png">
