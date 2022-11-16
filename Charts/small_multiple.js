@@ -6,7 +6,7 @@ function draw_small_multiple(name, id) {
             bottom: 30,
             left: 60
         },
-        width2 = 450 - margin2.left - margin2.right,
+        width2 = 400 - margin2.left - margin2.right,
         height2 = 300 - margin2.top - margin2.bottom;
 
     // append the svg object to the body of the page
