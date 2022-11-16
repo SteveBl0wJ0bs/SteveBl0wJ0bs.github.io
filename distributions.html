@@ -3,6 +3,7 @@
 	<head>
 		<link href='style.css' rel='stylesheet'>
 		<title>Trento Tree Map</title>
+		<script src="Charts/small_multiple.js"></script>
 	</head>
 	<body>
 		
@@ -48,6 +49,31 @@
 			of CO2 and height.</p>
 			<div id="scatterplot"></div>
 			<script src="Charts/scatterplot.js"></script>
+			<p><br>The following one is a multiple scatterplot showing the same data of the previous one but
+			using one separated plot for each different plant among the top 6 most present plants.
+			<br>Put the cursor over a point to see the name of the plant associated with that subgraph.<p>
+			<div>
+				<span id="CeltisAustralis">
+				<script>draw_small_multiple("Celtis australis","#CeltisAustralis");</script>
+				</span>
+				<span id="AesculusHippocastanum">
+				<script>draw_small_multiple("Aesculus hippocastanum","#AesculusHippocastanum");</script>
+				</span>
+				<span id="CarpinusBetulus">
+				<script>draw_small_multiple("Carpinus betulus","#CarpinusBetulus");</script>
+				</span>
+			</div>
+			<div>
+				<span id="TiliaCordata">
+				<script>draw_small_multiple("Tilia cordata","#TiliaCordata");</script>
+				</span>
+				<span id="PlatanusXHispanica">
+				<script>draw_small_multiple("Platanus x hispanica","#PlatanusXHispanica");</script>
+				</span>
+				<span id="TiliaXEuropaea">
+				<script>draw_small_multiple("Tilia x europaea","#TiliaXEuropaea");</script>
+				</span>
+			</div>
 			<p>Now through a bubble chart, we represent the same previous context, but this time 
 			the canopy size is also considered: higher is the canopy size, bigger are the dots. 
 			The dots with the same color are of the same specie.<br>Click on the dots to see the 
