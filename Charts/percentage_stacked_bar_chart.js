@@ -64,7 +64,7 @@ d3.csv("Data/DistrictsOccurrencesWithOthers.csv", function(data) {
 		.keys(subgroups)
 		(data)
 
-	var tooltip = d3.select("#stacked_bar_chart")
+	var tooltip = d3.select("#stacked_bar_chart_3")
 		.append("div")
 		.style("opacity", 0)
 		.attr("class", "tooltip")
@@ -83,7 +83,7 @@ d3.csv("Data/DistrictsOccurrencesWithOthers.csv", function(data) {
 		var subgroupName = d3.select(this.parentNode).datum().key;
 		var subgroupValue = d.data[subgroupName];
 		tooltip
-        .html("District: " + subgroupName + "<br>" + "Occurrence: " + subgroupValue+"%")
+        .html("Species: " + subgroupName + "<br>" + "Occurrence: " + subgroupValue+"%")
         .style("opacity", 1)
 	}
 	
