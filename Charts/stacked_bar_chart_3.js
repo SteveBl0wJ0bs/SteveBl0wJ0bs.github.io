@@ -17,15 +17,14 @@ var sv5 = d3.select("#stacked_bar_chart_3")
 d3.csv("Data/AllTreeDistrictsOccurrences.csv", function(data) {
 
 	data.sort(function(a, b) {
+		console.log(a.Total);
 		return d3.ascending(a.Total, b.Total);
 	});
 	
 	// List of subgroups = header of the csv files = soil condition here
 	var subgroups = data.columns.slice(1)
-	console.log(subgroups)
 	// removing the total column from subgroups
 	subgroups.pop()
-	console.log(subgroups)
 	
 	// List of groups = species here = value of the first column called group -> I show them on the X axis
 	var groups = d3.map(data, function(d){return(d.Name)}).keys()
