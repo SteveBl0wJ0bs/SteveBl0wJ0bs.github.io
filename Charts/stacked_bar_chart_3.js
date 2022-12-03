@@ -16,7 +16,7 @@ var sv5 = d3.select("#stacked_bar_chart_3")
 // Parse the Data
 d3.csv("Data/AllTreeDistrictsOccurrences.csv", function(data) {
 
-	data.sort(function(a, b) {
+	data.sort(function(b, a) {
 		return a["Total"] - b ["Total"];
 	});
 	
