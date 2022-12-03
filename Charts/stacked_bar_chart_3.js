@@ -17,7 +17,7 @@ var sv5 = d3.select("#stacked_bar_chart_3")
 d3.csv("Data/AllTreeDistrictsOccurrences.csv", function(data) {
 
 	data.sort(function(a, b) {
-		return d3.ascending(a.Total, b.Total);;
+		return d3.ascending(a.Total, b.Total);
 	});
 	
 	// List of subgroups = header of the csv files = soil condition here
