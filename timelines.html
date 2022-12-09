@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+		<title>Trento Tree Map</title>
+	</head>
+	<body>
+		
+		<div class="title">
+			<h1>Trento Tree Map</h1>
+		</div>
+		
+		<div class="group">
+			<h2>Group 2: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+		</div>
+		
+		<div class="topnav" position="center;">
+			<a href="index.html">Home</a>
+			<a href="categories.html">Categories</a>
+			<a href="distributions.html">Distributions</a>
+			<a href="maps.html">Maps</a>
+			<a class="active" href="#Timelines">Timelines</a>
+			<a href="support.html">Contacts & Support</a>
+		</div>
+		
+		<div class="paragraph">
+			<p>In this section, you can see the evolution of the temperature in the city of 
+			Salorno since there are no available information about the city of&ensp;Trento.<br>
+			<br>The first graph is a line chart that show the evolution of the minimum 
+			(bright colors), mean (scatters) and maximum (dark colors) temperature during an 
+			entire year. Click on bottom to choose which year you're interested in.</p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="lineChart"></div>
+			<script src="Charts/line_chart.js"></script>
+			<p>As you can see from the line chart above, temperatures don't change so much.
+			<br>Now, you can consult the mean temperature's evolution during each month 
+			through a radar chart.</p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="radarChart"></div>
+			<script src="Charts/radar_chart.js"></script>
+			<p>Now, you can consult the minimum and the maximum temperature's evolution 
+			during each month through a ridgeline chart. Click on bottom to choose which year 
+			you're interested in.</p>
+			<p>year:<select style ="position:center" id="selectButton">
+				<option value="1993">1993</option>
+				<option value="1997">1997</option>
+				<option value="2001">2001</option>
+				<option value="2005">2005</option>
+				<option value="2009">2009</option>
+				<option value="2013">2013</option>
+				<option value="2017">2017</option>
+				<option value="2021">2021</option>
+			</select></p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="ridgelineChart"></div>
+			<script src="Charts/ridgeline_chart.js"></script>			
+		</div>
+	</body>
+	<footer>
+		<img src="Images/TrentoLogo.png">
+	</footer>
+</html>
