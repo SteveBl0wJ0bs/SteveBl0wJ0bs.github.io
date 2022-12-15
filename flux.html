@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+		<title>Trento Tree Map</title>
+	</head>
+	<body>
+		
+		<div class="title">
+			<h1>Trento Tree Map</h1>
+		</div>
+		
+		<div class="group">
+			<h2>Group 2: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+		</div>
+		
+		<div class="topnav" position="center;">
+			<a href="index.html">Home</a>
+			<a href="categories.html">Categories</a>
+			<a href="distributions.html">Distributions</a>
+			<a href="maps.html">Maps</a>
+			<a href="timelines.html">Timelines</a>
+			<a class="active" href="#Flux">Flux</a>
+			<a href="support.html">Contacts & Support</a>
+		</div>
+		
+		<div class="paragraph">
+			<p>In this section, we represent through a sankey diagram the flux between the carbon
+			storage and the ten most present tree categories and between the ten most present tree 
+			categories and euro saved.</p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script>
+			<div id="sankeyChart"></div>
+			<script src="Charts/sankey_chart.js"></script>			
+		</div>
+	</body>
+	<footer>
+		<img src="Images/TrentoLogo.png">
+	</footer>
+</html>
