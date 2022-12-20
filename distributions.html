@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+		<title>Trento Tree Map</title>
+		<script src="Charts/small_multiple.js"></script>
+	</head>
+	<body>
+		
+		<div class="title">
+			<h1>Trento Tree Map</h1>
+		</div>
+		
+		<div class="group">
+			<h2>Group 2: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+		</div>
+		
+		<div class="topnav" position="center;">
+			<a href="index.html">Home</a>
+			<a href="categories.html">Categories</a>
+			<a class="active" href="#Distributions">Distributions</a>
+			<a href="maps.html">Maps</a>
+			<a href="timelines.html">Timelines</a>
+			<a href="flux.html">Flux</a>
+			<a href="support.html">Contacts & Support</a>
+		</div>
+		
+		<div class="paragraph">
+			<p>In this histogram, you can see how the size of the trees is distributed. The 
+			maximum height is equal to 60 (x-axis). Click on the button under the histogram to 
+			choose the number of bins and to see how the distribution change. In some cases you 
+			might not see all the bins you selected using the bottom. This phenomenon is due to 
+			the fact that very few trees has a certain height.</p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<div id="histogram"></div>
+			<p>
+				<label># bins</label>
+				<input class="box" type="number" min="1" max="12513" step="30" value="20" id="nBin" margin-top= >
+			</p>
+			<script src="Charts/histogram.js"></script>
+			<p><br>Now through a boxplot, we represent the same previous context. To ensure a good
+			visualization of the boxplot, we consider only the six most present species.</p>
+			<div id="boxplot"></div>
+			<script src="Charts/boxplot.js"></script>
+			<p><br>In this scatterplot, you can see the distribution of CO2 stored respect 
+			to the height of trees belonging to the top six most present species since it's 
+			unfeasible to assign to each one of 224 categories a good different color. In 
+			particular, the most of trees with an height less than 25m has CO2 values almost 
+			equal to the half of the maximum value. The dots with the same color are of the 
+			same specie. Click on the dots to see the name specie's name and the exact values 
+			of CO2 and height.</p>
+			<div id="scatterplot"></div>
+			<script src="Charts/scatterplot.js"></script>
+			<p><br>The following one is a multiple scatterplot showing the same data of the previous one but
+			using one separated plot for each different plant among the top 6 most present plants.
+			<br>Put the cursor over a point to see the name of the plant associated with that subgraph.<p>
+			<div>
+				<span id="CeltisAustralis">
+				<script>draw_small_multiple("Celtis australis","#CeltisAustralis");</script>
+				</span>
+				<span id="AesculusHippocastanum">
+				<script>draw_small_multiple("Aesculus hippocastanum","#AesculusHippocastanum");</script>
+				</span>
+				<span id="CarpinusBetulus">
+				<script>draw_small_multiple("Carpinus betulus","#CarpinusBetulus");</script>
+				</span>
+			</div>
+			<div>
+				<span id="TiliaCordata">
+				<script>draw_small_multiple("Tilia cordata","#TiliaCordata");</script>
+				</span>
+				<span id="PlatanusXHispanica">
+				<script>draw_small_multiple("Platanus x hispanica","#PlatanusXHispanica");</script>
+				</span>
+				<span id="TiliaXEuropaea">
+				<script>draw_small_multiple("Tilia x europaea","#TiliaXEuropaea");</script>
+				</span>
+			</div>
+			<p>Now through a bubble chart, we represent the same previous context, but this time 
+			the canopy size is also considered: higher is the canopy size, bigger are the dots. 
+			The dots with the same color are of the same specie.<br>Click on the dots to see the 
+			name specie's name and the exact values of CO2, height and canopy size.</p>
+			<div id="bubble_chart"></div>
+			<script src="Charts/bubble_chart.js"></script>			
+		</div>
+			
+	</body>
+	<footer>
+		<img src="Images/TrentoLogo.png">
+	</footer>
+</html>
