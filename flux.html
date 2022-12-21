@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<link href='style.css' rel='stylesheet'>
+		<title>Trento Tree Map</title>
+	</head>
+	<body>
+		
+		<div class="title">
+			<h1>Trento Tree Map</h1>
+		</div>
+		
+		<div class="group">
+			<h2>Group 2: &nbsp Giacomo Garbarino &nbsp & &nbsp Manuel Parmiggiani</h2>
+		</div>
+		
+		<div class="topnav" position="center;">
+			<a href="index.html">Home</a>
+			<a href="categories.html">Categories</a>
+			<a href="distributions.html">Distributions</a>
+			<a href="maps.html">Maps</a>
+			<a href="timelines.html">Timelines</a>
+			<a class="active" href="#Flux">Flux</a>
+			<a href="support.html">Contacts & Support</a>
+		</div>
+		
+		<div class="paragraph">
+			<p>In this section, we represent through a sankey diagram the flux between<br> the carbon
+			storage and the ten most present tree categories <br>and between the ten most present tree 
+			categories and euro saved. <br>Move the cursor on the edges to see details. <br>Since the total
+			carbon storage is too much greater <br>than the euro saved one, and due to the height of 
+			the svg <br>which denotes a limit to ensure the readability of the diagram, the height <br>of 
+			the carbon storage node and the euro saved node, and so the height <br>of the edges,
+			is equal among them.</p>
+			<script src="https://d3js.org/d3.v4.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script>
+			<div id="sankeyChart"></div>
+			<script src="Charts/sankey_chart.js"></script>			
+		</div>
+	</body>
+	<footer>
+		<img src="Images/TrentoLogo.png">
+	</footer>
+</html>
